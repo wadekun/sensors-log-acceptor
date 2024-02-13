@@ -1,0 +1,35 @@
+service:
+  name: sensors-log-acceptor
+  address: :40666
+
+redis:
+  addr:
+  password:
+  db: 0
+
+db:
+  url:
+
+kafka:
+  brokers: 172.16.187.88:9092,172.16.187.89:9092,172.16.187.90:9092
+  msgTopic: user_event_log
+  errTopic: user_event_log_err
+
+logger:
+  enableLevel: debug
+  console:
+    enable: false
+  kafka:
+    enable: false
+  file:
+    enable: true
+    path: logs/sensors-log-acceptor.log
+    maxAge: 1
+    maxSize: 2
+    maxBackups: 10
+    compress: true
+
+
+
+
+
