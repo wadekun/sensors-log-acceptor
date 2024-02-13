@@ -124,15 +124,7 @@ create unique index uidx_field_value
 ```sql
 -- 新增user_type枚举值
 insert into dbp_field_enum_values(field, enum_value, value_name, created_at, updated_at)
-values ('user_type', 'user_c', 'C端用户', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
-       ('user_type', 'user_clerk', '药店宝账号', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
-       ('user_type', 'user_purchaser', '福联社采购账号', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
-
-#        ('project_id', 'taipinrenshou', '太平人寿', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
-#        ('project_id', 'yaoshenbao', '药神宝', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
-#        ('project_id', 'yaoliandaojia', '药联到家', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
-#        ('project_id', 'fulianshe', '福联社', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
-
+values 
        ('platform', 'APP', '应用', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
        ('platform', 'Wechat_Public', '微信公众号', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
        ('platform', 'Wechat_Applet', '微信小程序', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
