@@ -1,0 +1,9 @@
+2022-05-21 10:36:04.614	INFO	action-log-acceptor/main.go:16	env: testing , consulAddress: udsdk.turboradio.cn
+2022-05-21 10:38:37.480	INFO	action-log-acceptor/main.go:16	env: testing , consulAddress: udsdk.turboradio.cn
+2022-05-21 10:38:37.917	INFO	action-log-acceptor/main.go:20	init database resources successful.
+2022-05-21 10:38:37.960	INFO	dao/dao.go:118	find 9 rows
+2022-05-21 10:38:39.898	INFO	action-log-acceptor/main.go:24	init cache resources successful.
+2022-05-21 10:38:39.898	INFO	cache/cache.go:237	Subscribe EventFieldChangeTopic : DBP:META_CACHE:EventField:Change:Topic
+2022-05-21 10:38:39.898	INFO	cache/cache.go:195	Subscribe FieldChangeTopic : DBP:META_CACHE:Field:Change:Topic
+2022-05-21 10:38:39.898	INFO	cache/cache.go:140	Subscribe EventChangeTopic : DBP:META_CACHE:Event:Change:Topic
+2022-05-21 10:38:39.898	INFO	cache/cache.go:296	Subscribe FieldEnumValueChangeTopic : DBP:META_CACHE:FieldEnumValue:Change:Topic

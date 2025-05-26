@@ -1,0 +1,35 @@
+service:
+  name: sensors-log-acceptor
+  address: :40666
+
+redis:
+  addr: ${redis_host}:${redis_port:6379}
+  password: ${redis_password}
+  db: 0
+
+db:
+  url: ${user}:${password}@tcp(${db:host}:${port:3306})/action-log?charset=utf8mb4&parseTime=True&loc=Local
+
+kafka:
+  brokers: ${kafka_brokers}
+  msgTopic: user_event_log
+  errTopic: user_event_log_err
+
+logger:
+  enableLevel: debug
+  console:
+    enable: false
+  kafka:
+    enable: false
+  file:
+    enable: true
+    path: logs/sensors-log-acceptor.log
+    maxAge: 1
+    maxSize: 2
+    maxBackups: 10
+    compress: true
+
+
+
+
+
